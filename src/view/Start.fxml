@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="background" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox>
+            <ToolBar>
+                <items>
+                    <Region styleClass="spacer" />
+                    <HBox styleClass="segmented-button-bar">
+                        <Button styleClass="first" text="Tasks" />
+                        <Button text="Administrator" />
+                        <Button text="Search" />
+                        <Button text="Line" />
+                        <Button styleClass="last" text="Process" />
+                    </HBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <HBox styleClass="segmented-button-bar">
+                        <Button styleClass="first">
+                            <graphic>
+                                <ImageView fx:id="btnSetting" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/settings.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button styleClass="last">
+                            <graphic>
+                                <ImageView fx:id="btnPower" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/power.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                </items>
+            </ToolBar>
+        </VBox>
+    </top>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button  id = "record-sales" mnemonicParsing="false" text="Button">
+                    <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <!-- This is the stylesheet-->
+    <stylesheets>
+        <URL value="@../resources/main.css" />
+    </stylesheets>
+</BorderPane>
